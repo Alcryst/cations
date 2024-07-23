@@ -40,6 +40,8 @@ sh install.sh
 cations
 ```
 
+**NOTE:** if at this point you get an error saying that the command does not exist, please make sure your Python scripts are added to your $PATH variable. An easy fix is to install the most recent version of Python 3, as the modern official installer will automatically configure your $PATH variable for you.
+
 5. To use the application again, simply enter the above command.
 
 
