@@ -52,4 +52,14 @@ You can complete each ion every day to extend your streak: the number of consecu
 
 Press C for full controls on how to use the application.
 
-##
+
+
+## Contributions & License
+
+Contributions are more than welcome! Feel free to submit issues or pull requests if you have ideas for how to make **cations** even better.
+
+This project is licensed under the MIT License. See the LICENSE file for more information.
+
+___
+
+**cations** by Alcryst
