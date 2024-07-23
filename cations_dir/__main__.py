@@ -150,7 +150,7 @@ def loadIons():
 			ionlist.append(chunks)
 		f.close()
 
-		if (ionlist == [[]])
+		if (ionlist == [[]]):
 			return []
 
 		for ion in ionlist:
