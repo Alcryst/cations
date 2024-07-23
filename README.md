@@ -31,7 +31,7 @@ cd cations
 3. Run the setup file:
 
 ```bash
-install.sh
+sh install.sh
 ```
 
 4. Once installation has completed, you will be able to start the application by simply entering the command:
@@ -46,7 +46,7 @@ cations
 
 ## Usage
 
-Each habit is represented by an "ion". When creating your ion, name it after a habit you want to repeat each day - for example, "Practice the piano" or "Write a line of code". Make it simple and easy to complete, to inspire you to get started and make consistent progress; once you've achieved consistency then you can slowly start to increase the intensity of your habit (and change the name of your ion if you wish). If you're interested, check out the **Resources** section for supplemental information on why that's recommended!
+Each habit is represented by an "ion". When creating your ion, name it after a habit you want to repeat each day - for example, "Practice the piano" or "Write a line of code". Make it simple and easy to complete, to inspire you to get started and make consistent progress; once you've achieved consistency then you can slowly start to increase the intensity of your habit (and change the name of your ion if you wish).
 
 You can complete each ion every day to extend your streak: the number of consecutive days that you've completed an ion. If you miss a day, your streak will reset to 0. Don't be demotivated, though; the important part is getting back on track.
 
