@@ -150,6 +150,9 @@ def loadIons():
 			ionlist.append(chunks)
 		f.close()
 
+		if (ionlist == [[]])
+			return []
+
 		for ion in ionlist:
 			ion[0] = ion[0].replace("_", " ")
 
@@ -371,8 +374,6 @@ def main():
 	configStr = loadConfig()
 
 	# anion = configList[0]
-	if DEBUG:
-		print(configStr)
 	anion = ("True" == configStr) # this took me a stackoverflow search to figure out ._.
 	completedToday = False
 
