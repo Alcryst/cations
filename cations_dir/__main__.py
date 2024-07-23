@@ -364,7 +364,8 @@ def drawAnion(term, face, size):
 					print("█                    █", end='')
 
 
-def main(term):
+def main():
+	term = blessed.Terminal()
 	TODAY = datetime.date.today().isoformat()
 	configStr = loadConfig()
 
@@ -566,6 +567,5 @@ def main(term):
 
 if __name__ == '__main__':
 	DEBUG = False
-	term = blessed.Terminal()
-	main(term)
+	main()
 	if (DEBUG): print("DEBUG: yay")
