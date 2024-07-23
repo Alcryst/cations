@@ -565,7 +565,7 @@ def main(term):
 		# print("Good morning", inp)
 
 if __name__ == '__main__':
-	DEBUG = True
+	DEBUG = False
 	term = blessed.Terminal()
 	main(term)
 	if (DEBUG): print("DEBUG: yay")
