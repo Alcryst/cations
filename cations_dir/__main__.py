@@ -3,7 +3,7 @@
 ┃ ┏┓╋┓┏┓┏┓┏
 ┗┛┗┻┗┗┗┛┛┗┛
 CATIONS by Alcryst
-Version 1.0.0
+Version 1.0.1
 
 See LICENSE.txt for license info.
 """
