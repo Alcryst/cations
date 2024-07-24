@@ -16,33 +16,37 @@ Follow these steps to install **cations** and get started right away.
 
 *Note: This application requires Python 3 and pip3 to be installed on your system.*
 
-1. Clone the repository:
+1. Not necessary, but recommended: Navigate to your home directory (or whichever directory you normally clone repositories to) first.
+
+```bash
+cd ~
+```
+
+2. Clone the repository:
 
 ```bash
 git clone https://github.com/Alcryst/cations.git
 ```
 
-2. Enter the project directory:
+3. Enter the project directory:
 
 ```bash
 cd cations
 ```
 
-3. Run the setup file:
+4. Run the setup file:
 
 ```bash
 sh install.sh
 ```
 
-4. Once installation has completed, you will be able to start the application by simply entering the command:
+5. Once installation has completed, you will be able to start the application by simply entering the command:
 
 ```bash
 cations
 ```
 
 **NOTE:** if at this point you get an error saying that the command does not exist, please make sure your Python scripts are added to your $PATH variable. An easy fix is to install the most recent version of Python 3, as the modern official installer will automatically configure your $PATH variable for you.
-
-5. To use the application again, simply enter the above command.
 
 
 
