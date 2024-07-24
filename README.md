@@ -60,6 +60,35 @@ Press C for full controls on how to use the application.
 
 
 
+## Uninstallation/Deletion Instructions
+
+1. You can uninstall everything except the repository files with pip3 like so:
+
+```bash
+pip3 uninstall cations
+```
+
+2. To remove the rest of the files, navigate to the directory containing cations and manually remove the directory, e.g. through the file explorer or command line:
+```bash
+rm -vrf cations/
+```
+
+**Note: be careful that you're using this command on the right directory if you choose to use it!**
+
+
+
+## Update Instructions
+
+Uninstall and do a fresh install as shown above.
+
+
+
+## Patch Notes
+
+- Ver 1.0.1: Fix file accessing issue when repository is not in home directory
+
+- Ver 1.0.0: Release!
+
 ## Contributions & License
 
 Contributions are more than welcome! Feel free to submit issues or pull requests if you have ideas for how to make **cations** even better.
