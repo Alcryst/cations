@@ -26,7 +26,7 @@ import os
 
 def loadConfig():
 	#try:
-		f = open(str(os.path.expanduser('~')) + "/cations/cations_dir/user_data/config.txt", "r")
+		f = open(str(os.path.abspath(os.getcwd())) + "/user_data/config.txt", "r")
 		# configlist = []
 		# for line in f:
 		# 	configlist.append(line.rstrip("\n"))
@@ -44,7 +44,7 @@ def loadConfig():
 
 def writeConfig(configStr):
 	try:
-		f = open(str(os.path.expanduser('~')) + "/cations/cations_dir/user_data/config.txt", "w")
+		f = open(str(os.path.abspath(os.getcwd())) + "/user_data/config.txt", "w")
 		# for item in configlist:
 		# 	f.write(item + "\n")
 		# f.close()
@@ -143,7 +143,7 @@ def editConfig():
 def loadIons():
 	# add each ion & details to ionlist as its own list
 	try:
-		f = open(str(os.path.expanduser('~')) + "/cations/cations_dir/user_data/ions.txt", "r")
+		f = open(str(os.path.abspath(os.getcwd())) + "/user_data/ions.txt", "r")
 		ionlist = []
 		for line in f:
 			chunks = line.rstrip("\n").split()
@@ -164,7 +164,7 @@ def loadIons():
 
 def writeIons(ionlist):
 	try:
-		f = open(str(os.path.expanduser('~')) + "/cations/cations_dir/user_data/ions.txt", "w")
+		f = open(str(os.path.abspath(os.getcwd())) + "/user_data/ions.txt", "w")
 		for ion in ionlist:
 			# i know hardcoding is bad practice but it's surely not that bad
 			f.write(ion[0].replace(" ", "_") + " " + str(ion[1]) + " " + str(ion[2]) + "\n")
