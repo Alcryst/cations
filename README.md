@@ -73,13 +73,14 @@ pip3 uninstall cations
 rm -vrf cations/
 ```
 
-**Note: be careful that you're using this command on the right directory if you choose to use it!**
+**NOTE: be careful that you're using this command on the right directory if you choose to use it!**
 
+**Uninstalling will delete your user data.**
 
 
 ## Update Instructions
 
-Uninstall and do a fresh install as shown above.
+Uninstall and do a fresh install as shown above. **You will lose your previous user data; to save it, find the `ions.txt` file in your cloned cations repository at `cations/cations_dir/user_data/ions.txt` and copy the data. Then, upon reinstallation, paste the data into the newly created `ions.txt` file at the same location within the cations directory.**
 
 
 
