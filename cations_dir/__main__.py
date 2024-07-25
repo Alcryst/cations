@@ -22,7 +22,6 @@ import blessed
 import time
 import datetime
 import os
-# date.today().isoformat()
 
 def loadConfig():
 	#try:
@@ -206,24 +205,22 @@ def createIon(term, ionlist): # there's an issue where term.cbreak() hides input
 	# see the big comment block in the while loop for more info.
 	try:
 		with term.location(y=term.height // 2):
-			print(term.center("Enter the name of the ion you would like to create (will automatically save/quit:"))
+			print(term.center("Enter the name of the ion you would like to create (WILL AUTOSAVE/QUIT):"))
 	except:
 		return 1
 	with term.location(y=(term.height // 2) + 1, x=term.width // 3): # yes this breaks if the terminal height is extremely tiny but is that really gonna happen??
 		newIon = ["", "0", "0"]
 		newIon[0] = str(input())
 		ionlist.append(newIon)
-		# print(term.clear + term.center("Creation successful."))
 
 def modifyIonName(term, ionlist, index): # see createIon()
 	try:
 		with term.location(y=term.height // 2):
-			print(term.center("Enter the new name of this ion (will automatically save/quit):"))
+			print(term.center("Enter the new name of this ion (WILL AUTOSAVE/QUIT):"))
 	except:
 		return 1
 	with term.location(y=(term.height // 2) + 1, x=term.width // 3):
 		ionlist[index][0] = str(input())
-		# print(term.clear + term.center("Renaming successful."))
 
 def completeIon(term, ionlist, index):
 	if (ionlist[index][2] != datetime.date.today().isoformat()):
@@ -557,17 +554,5 @@ def main():
 			configStr = str(anion)
 			writeConfig(configStr)
 
-			# term.inkey()
-			# print(term.home + term.center(term.bold(ionlist[0][0])))
-			# print(term.center(term.bold_standout(ionlist[0][1])) + term.normal)
-			# with term.location(y=term.height // 2):
-			# print("\n" + term.center(term.))
-		# print()
-		# print(term.home + "Hello", end='')
-		# inp = input("Enter your name: ")
-		# print("Good morning", inp)
-
 if __name__ == '__main__':
-	DEBUG = False
 	main()
-	if (DEBUG): print("DEBUG: yay")
