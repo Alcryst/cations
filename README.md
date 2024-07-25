@@ -86,6 +86,8 @@ Uninstall and do a fresh install as shown above. **You will lose your previous u
 
 ## Patch Notes
 
+- Ver 1.0.2: Fix bug with habit deletion
+
 - Ver 1.0.1: Fix file accessing issue when repository is not in home directory
 
 - Ver 1.0.0: Release!
