@@ -3,7 +3,7 @@
 ┃ ┏┓╋┓┏┓┏┓┏
 ┗┛┗┻┗┗┗┛┛┗┛
 CATIONS by Alcryst
-Version 1.0.1
+Version 1.0.2
 
 See LICENSE.txt for license info.
 """
@@ -196,9 +196,11 @@ def deleteCurrIon(term, ionlist, index):
 		print(term.center(term.standout("Press X again to confirm, or press C to cancel.")) + term.normal)
 		ans = term.inkey(timeout=10)
 		if (ans and (ans.lower() == "x")):
-			del ionlist[index]
-			print(term.clear + term.center("Successfully deleted."))
-			print(term.center("(You can quit without saving to recover your ion.)"))
+			try:
+				del ionlist[index]
+				print(term.clear + term.center("Successfully deleted. (Quit without saving to undo this.)"))
+			except:
+				print(term.clear + term.center("No delete possible.")
 
 def createIon(term, ionlist): # there's an issue where term.cbreak() hides input so i'm just working
 	# around that by putting the operation before save/quit.
