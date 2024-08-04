@@ -40,6 +40,8 @@ cd cations
 sh install.sh
 ```
 
+**NOTE:** the above command may not work for users of certain Linux distributions including Manjaro. If you are experiencing this issue, please try the manual fix [here](https://github.com/Alcryst/cations/issues/5).
+
 5. Once installation has completed, you will be able to start the application by simply entering the command:
 
 ```bash
