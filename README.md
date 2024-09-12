@@ -1,5 +1,6 @@
 # cations
 
+![cations_screenshot](https://github.com/user-attachments/assets/37b5c4d9-0324-44c8-867b-7bb31cd0fa63)
 
 
 *Ready to make productivity a habit?*
